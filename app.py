@@ -47,9 +47,6 @@ else:
 # 인덱스 제외하고 데이터프레임 표시
 st.dataframe(df[display_columns].head(), use_container_width=True, hide_index=True)
 
-# 기본 통계
-st.subheader("기본 통계")
-st.write(df.describe())
 
 # multiMovieYn과 repNationCd의 NaN 비율 계산
 st.subheader("multiMovieYn 및 repNationCd의 NaN 비율")
